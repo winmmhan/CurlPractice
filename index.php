@@ -1,6 +1,5 @@
 <?php
 include('includes/database.php');
-//include('includes/curl.php')
 include('includes/header.php');
 include('includes/footer.php');
 
