@@ -101,7 +101,7 @@ $showAllTrans = $db->showHistory();
 
 if(!empty($showAllTrans)){
     header('Content-Type: application/json');
-    print json_encode($showAllTrans);
+    print json_encode($showAllTrans,JSON_UNESCAPED_SLASHES);
 }
 
 ?>
