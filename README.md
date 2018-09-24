@@ -14,9 +14,8 @@ To Enable cURL Support in phpInfo :
 
 Database:
 Mysql Database was used to implement the project.
-For other Database tools, change the PDO driver mysql to desire DB driver in database.php
 
-$connection = new PDO('mysql:host=localhost;dbName=curlpractice_db;','root','root');
+Run the following scripts to set up database.
 
 CREATE DATABASE IF NOT EXISTS curlpractice_db;
 
@@ -27,4 +26,10 @@ CREATE TABLE transcations (
     date varchar(255),
     error varchar(255) 
 );
+
+For other Database tools, change the PDO driver mysql to desire Database driver in database.php
+
+$connection = new PDO('mysql:host=localhost;dbName=curlpractice_db;','root','root');
+
+
 
