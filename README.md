@@ -20,7 +20,7 @@ Run the following scripts to set up database.
 CREATE DATABASE IF NOT EXISTS curlpractice_db;
 
 CREATE TABLE IF NOT EXISTS transcations (
-    id int(10),
+    id int(10) NOT NULL AUTO_INCREMENT,
     url varchar(255),
     content_length varchar(255),
     date varchar(255),
