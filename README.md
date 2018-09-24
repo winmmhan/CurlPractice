@@ -17,3 +17,14 @@ Mysql Database was used to implement the project.
 For other Database tools, change the PDO driver mysql to desire DB driver in database.php
 
 $connection = new PDO('mysql:host=localhost;dbName=curlpractice_db;','root','root');
+
+CREATE DATABASE IF NOT EXISTS curlpractice_db;
+
+CREATE TABLE transcations (
+    id int,
+    url varchar(255),
+    content_length varchar(255),
+    date varchar(255),
+    error varchar(255) 
+);
+
