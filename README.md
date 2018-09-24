@@ -21,7 +21,7 @@ $connection = new PDO('mysql:host=localhost;dbName=curlpractice_db;','root','roo
 CREATE DATABASE IF NOT EXISTS curlpractice_db;
 
 CREATE TABLE transcations (
-    id int,
+    id int(10),
     url varchar(255),
     content_length varchar(255),
     date varchar(255),
