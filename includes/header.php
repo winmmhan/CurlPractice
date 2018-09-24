@@ -18,7 +18,17 @@
         <h1>Curl Practice </h1>
         
         <div class="row main">
-            <div class="col-md-12 center">
-      
-    
+            <div class="col-md-12">
+                <nav class="navbar navbar-light" style="background-color: #e9f1f7;">
+                    <div class="container-fluid">
+
+                        <ul class="nav">
+                            <li class="active"><a href="../index.php">Explore Page</a></li>
+                            <li><a href="../history.php" style="padding-left: 30px;">Show History</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            
    

@@ -57,7 +57,7 @@ class pdoDB{
  
 
      // Delete all url history
-     public function deleteHistory($sql){
+     public function deleteHistory(){
          
         $sql= "SELECT * FROM transcations";
 

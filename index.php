@@ -79,32 +79,22 @@ function test_input($data) {
 }
 
 ?>
-  
-  <form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-    <div class="form-group input_url col-md-8">
-        Enter URL : <input type="text" class="form-control" name="url_input">
+ 
+<div class="row url_form">
+    <div class ="col-md-10">  
+      <form class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+        <div class="form-group input_url">
+            Enter URL : <input type="text" class="form-control " name="url_input">
+        </div>
+        <br>
+        <div class="custombuttons">
+            <button type="submit" class="btn btn-primary">Browse </button> 
+            <button type="clear" class="btn btn-primary">Clear</button> 
+        </div> 
+     </form>
+ 
     </div>
-    <br>
-    <button type="submit" class="btn btn-primary">Browse </button> 
-    <button type="clear" class="btn btn-primary">Clear</button>  
-    
-    <button type="submit" class="btn btn-primary" name="url_history">Show History</button> 
-</form>
- 
-    
- 
-
-   
-<?php
-
-$showAllTrans = $db->showHistory();
-
-if(!empty($showAllTrans)){
-    header('Content-Type: application/json');
-    print json_encode($showAllTrans,JSON_UNESCAPED_SLASHES);
-}
-
-?>
+</div>
 
 
 
